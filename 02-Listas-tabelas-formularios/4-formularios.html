@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            max-width: 550px;
+            margin: 0 auto;
+        }
+    
+
+        .contain {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        #form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        input, label{
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <form action="" id="form">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha"><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <form action="" id="form">
+        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="">
+
+        <input type="radio" name="sexo" id="">
+        <input type="radio" name="sexo" id="">
+        <input type="radio" name="sexo" id="">
+
+    </form>
+
+    <div class="contain">
+        <form action="" id="form">
+            <label for="cor">Cores</label>
+            <input type="color" name="" id="">
+    
+            <label for="data">Data</label>
+            <input type="date" name="" id="data">
+    
+            <label for="time">Hora</label>
+            <input type="time" name="" id="">
+
+            <label for="range">Range</label>
+            <input type="range" id="range" name="range" min="0" max="100" step="10" value="50">
+        </form>
+    </div>
+
+    <h2>Utilizando o Select</h2>
+    <select name="ordem" id="" size="7" multiple>
+        <option value="1">1</option>
+        <option value="2" selected>2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    
+    <textarea name="" id="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At modi amet ullam aut expedita officiis possimus impedit molestias consectetur illum iusto a veritatis distinctio, nam necessitatibus dicta, rem itaque totam!
+    </textarea>
+
+    <br>
+    <br>    
+    <button>Enviar</button>
+</body>
+</html>

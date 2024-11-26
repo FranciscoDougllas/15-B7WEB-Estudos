@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        fieldset{
+            width: 200px;
+            background-color: #eee;
+            margin: 10px;
+        }
+
+        label, input{
+            display: block;
+            margin-top: 10px;
+            width: 95%;
+        }
+        form{
+            display: flex;
+        }
+
+        legend{
+            background-color: #ccc;
+            padding: 5px;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="post">
+        <fieldset>
+            <legend>Informações pessoais</legend>
+            <label for="">
+                Nome: <input type="text">
+            </label>
+    
+            <label for="">
+                Sobrenome: <input type="text">
+            </label>
+
+            <label for="">
+                Empresa: <input type="text">
+            </label>
+
+            <label for="">
+                Cargo: <input type="text">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações de contato</legend>
+            <label for="">
+                Telefone: <input type="tel">
+            </label>
+    
+            <label for="">
+                Email: <input type="email">
+            </label>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
