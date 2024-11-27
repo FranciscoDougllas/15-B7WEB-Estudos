@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img{
+            width: 400px;
+            height: 500px;
+        }
+        #cover{
+            object-fit: cover;
+        }
+
+        #contain{
+            object-fit: contain;
+        }
+
+        #fill{
+            object-fit: fill;
+        }
+    </style>
+</head>
+<body>
+    <picture>
+        <source media="(min-width: 768px)" srcset="https://c4.wallpaperflare.com/wallpaper/972/49/277/carros-wallpaper-thumb.jpg">
+        <source media="(min-width: 400px)" srcset="https://c4.wallpaperflare.com/wallpaper/237/854/401/carros-wallpaper-preview.jpg">
+        <img src="img/pequeno.jpg" alt="Imagem responsiva">
+    </picture>
+
+
+    <h2>Utilizando o Object Fit</h2>
+    <img src="https://www.tgpoli.com.br/img/noticias/2c9cea216b8d0ddcf8c15d5841d392b4.webp" alt="" id="cover">
+
+    <img src="https://www.tgpoli.com.br/img/noticias/2c9cea216b8d0ddcf8c15d5841d392b4.webp" alt="" id="contain">
+
+    <img src="https://www.tgpoli.com.br/img/noticias/2c9cea216b8d0ddcf8c15d5841d392b4.webp" alt="" id="fill"
+</body>
+</html>

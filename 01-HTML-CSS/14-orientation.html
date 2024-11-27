@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        caixa{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: inline-block;
+            margin: 5px;}
+
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (orientation: landscape){
+            body{
+                flex-direction: row;
+            }
+
+        @media (orientation: portrait){
+            body{
+                flex-direction: column;
+            }
+
+        @media (aspect-ratio: 1/1){
+            caixa{
+                background-color: blue;
+            }
+    </style>
+</head>
+<body>
+    <caixa></caixa>
+    <caixa></caixa>
+    <caixa></caixa>
+    <caixa></caixa>
+</body>
+</html>
