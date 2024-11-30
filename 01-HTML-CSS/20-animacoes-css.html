@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .exemplo{
+            display: flex;
+            margin: 50px auto;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: exemplo;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            box-shadow: 0 0 10px black;
+        }
+
+        @keyframes exemplo{
+            0%{
+                transform: scale(1);
+                background-color: blue;
+                border-radius: 50px;
+            }
+            50%{
+                transform: scale(1.5);
+                background-color: red;
+                border-top-right-radius: 20px;
+            }
+            100%{
+                transform: scale(1);
+                background-color: orange;
+            }
+        }
+
+        @keyframes exemplo2{
+            0% {transform: rotate(0deg);}
+            100% {transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="exemplo"></div>
+
+    <div class="exemplo"></div>
+
+    <div class="exemplo"></div>
+
+    <div class="exemplo2"></div>
+
+    
+</body>
+</html>
